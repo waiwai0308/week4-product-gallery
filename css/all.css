@@ -382,7 +382,8 @@ html {
     background-size: 40px 40px;
     -webkit-transform: translate(25%, 50%);
     -ms-transform: translate(25%, 50%);
-    transform: translate(25%, 50%); }
+    transform: translate(25%, 50%);
+    z-index: 1; }
   .item5 .img-num {
     grid-column: 2;
     grid-row: 3;
