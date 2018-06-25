@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="grid-container">
+    <div class="grid-container" id="all">
         <div class="title-tag">
             <span>CCCLOTHES</span>
         </div>
@@ -84,6 +84,14 @@
 
         </div>
     </div>
+    <script>
+        function toProduct() {
+            location.href = "product.html";
+        }
+        // add event listener to table
+        var el = document.getElementById('all');
+        el.addEventListener("click", toProduct, false);
+    </script>
 </body>
 
 </html>
