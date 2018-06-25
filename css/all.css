@@ -36,6 +36,13 @@ html {
   align-self: end;
   margin-bottom: -10px; }
 
+.img-title {
+  font-weight: bold; }
+
+.img-small-text {
+  font-weight: bold;
+  font-style: italic; }
+
 .item1 {
   display: grid;
   grid-area: 2 / 1 / 8 / 6;
