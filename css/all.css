@@ -34,6 +34,7 @@ html {
   width: 28px;
   grid-column: 1;
   grid-row: 1;
+  -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
   justify-self: end;
@@ -161,6 +162,7 @@ html {
     font-size: 48px;
     color: #000000;
     text-align: left;
+    -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
     line-height: 48px;
@@ -204,6 +206,7 @@ html {
     grid-row: 2;
     text-align: left;
     font-size: 24px;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     z-index: 2; }
@@ -230,6 +233,7 @@ html {
     text-align: left;
     line-height: 48px;
     z-index: 2;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     position: relative; }
@@ -274,6 +278,7 @@ html {
     grid-row: 4;
     text-align: right;
     font-size: 24px;
+    -webkit-align-self: start;
     -ms-flex-item-align: start;
     align-self: start;
     z-index: 2; }
@@ -299,12 +304,15 @@ html {
     color: #000000;
     text-align: left;
     line-height: 48px;
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: tb-lr;
-    writing-mode: vertical-lr;
-    justify-self: center;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    justify-self: end;
     z-index: 2;
-    position: relative; }
+    position: relative;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
     .item4 .img-title::before {
       content: attr(text);
       position: absolute;
@@ -321,7 +329,7 @@ html {
       position: absolute;
       color: rgba(0, 0, 0, 0.1);
       top: 0px;
-      right: -19px;
+      right: -26px;
       width: 15px;
       overflow: hidden; }
   .item4 .img-border {
@@ -344,6 +352,7 @@ html {
     grid-column: 1;
     grid-row: 5;
     text-align: right;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     font-size: 48px;
@@ -353,6 +362,7 @@ html {
     grid-row: 1;
     text-align: right;
     font-size: 24px;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     justify-self: center;
@@ -373,6 +383,9 @@ html {
     z-index: 1;
     width: 240px;
     height: 200px;
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
     background-position: center;
     background-size: cover;
     background-image: url("https://images.unsplash.com/photo-1525448198276-222de3961638?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=43fb25556cdbd191e520c7f28739e40d&auto=format&fit=crop&w=1350&q=80"); }
@@ -384,6 +397,7 @@ html {
     text-align: left;
     line-height: 48px;
     z-index: 2;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     position: relative; }
@@ -422,6 +436,7 @@ html {
   .item5 .img-num {
     grid-column: 2;
     grid-row: 3;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     font-size: 48px;
@@ -431,6 +446,7 @@ html {
     grid-column: 5;
     grid-row: 2;
     font-size: 24px;
+    -webkit-align-self: start;
     -ms-flex-item-align: start;
     align-self: start;
     z-index: 2;
@@ -458,6 +474,7 @@ html {
     text-align: right;
     line-height: 48px;
     z-index: 2;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     position: relative; }
@@ -494,6 +511,7 @@ html {
   .item6 .img-num {
     grid-column: 1;
     grid-row: 3;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     font-size: 48px;
@@ -503,6 +521,7 @@ html {
     grid-column: 3 / 5;
     grid-row: 6;
     font-size: 24px;
+    -webkit-align-self: start;
     -ms-flex-item-align: start;
     align-self: start;
     text-align: center;
@@ -567,6 +586,7 @@ html {
   .item7 .img-num {
     grid-column: 3;
     grid-row: 5;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     font-size: 48px;
@@ -576,6 +596,7 @@ html {
     grid-column: 1 / 3;
     grid-row: 1;
     font-size: 24px;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end;
     text-align: left;
@@ -605,6 +626,7 @@ html {
     line-height: 48px;
     z-index: 2;
     position: relative;
+    -webkit-align-self: end;
     -ms-flex-item-align: end;
     align-self: end; }
   .product-top .img-title2 {
@@ -614,6 +636,7 @@ html {
     color: #000000;
     text-align: left;
     line-height: 48px;
+    font-weight: 900;
     z-index: 2;
     position: relative;
     justify-self: start;
@@ -637,15 +660,20 @@ html {
   .product-top .img-num {
     grid-column: 1;
     grid-row: 5;
-    text-align: right;
+    text-align: left;
+    justify-self: end;
     font-size: 48px;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl; }
+    writing-mode: vertical-rl;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
   .product-top .img-text {
     grid-column: 2;
     grid-row: 6;
     text-align: right;
+    -webkit-align-self: start;
     -ms-flex-item-align: start;
     align-self: start;
     font-size: 48px;
